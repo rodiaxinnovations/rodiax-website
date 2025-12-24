@@ -69,36 +69,67 @@
 <section class="py-28 border-t border-gray-800 relative z-10">
   <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16">
 
-    <!-- LEFT: TEXT -->
+    <!-- LEFT: CONTACT DETAILS -->
     <div class="reveal">
       <h2 class="text-3xl font-bold mb-6">
-        Start a Technical Conversation
+        Official Contact Information
       </h2>
-      <p class="text-gray-400 mb-8">
-        Reach out to Rodiax Innovations to discuss:
-      </p>
 
-      <ul class="space-y-4 text-gray-400">
-        <li>• Predictive maintenance feasibility</li>
-        <li>• Condition monitoring requirements</li>
-        <li>• Vibranto LF1 deployment scenarios</li>
-        <li>• Pilot studies and industrial trials</li>
-        <li>• Engineering consultancy and collaboration</li>
-      </ul>
+      <div class="space-y-6 text-gray-400 text-lg">
 
-      <p class="text-gray-400 mt-8">
-        We focus on understanding your operating context
-        before proposing any solution.
+        <!-- Address -->
+        <div>
+          <p class="font-semibold text-white mb-1">Registered Address</p>
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=CITTIC+CUSAT+TBI+CUSAT+Campus+Kochi+Kerala+682022"
+            target="_blank"
+            class="hover:text-rodiax transition"
+          >
+            Rodiax Innovations LLP<br>
+            CITTIC, CUSAT TBI<br>
+            CUSAT Campus, Kochi-22<br>
+            Kerala – 682022
+          </a>
+        </div>
+
+        <!-- Email -->
+        <div>
+          <p class="font-semibold text-white mb-1">Email</p>
+          <a
+            href="mailto:rodiaxinnovations@gmail.com"
+            class="hover:text-rodiax transition"
+          >
+            rodiaxinnovations@gmail.com
+          </a>
+        </div>
+
+        <!-- Phone -->
+        <div>
+          <p class="font-semibold text-white mb-1">Phone</p>
+          <a
+            href="tel:+919744045897"
+            class="hover:text-rodiax transition"
+          >
+            +91 97440 45897
+          </a>
+        </div>
+
+      </div>
+
+      <p class="text-gray-400 mt-10 max-w-md">
+        We prioritise understanding your operating environment,
+        constraints, and reliability goals before proposing
+        any technical solution.
       </p>
     </div>
 
     <!-- RIGHT: FORM -->
     <div class="reveal bg-black border border-gray-800 rounded-xl p-10">
       <h3 class="text-xl font-semibold mb-6">
-        Contact Form
+        Start a Technical Conversation
       </h3>
 
-      <!-- FORM (static for now) -->
+      <!-- FORM (static – GitHub Pages safe) -->
       <form class="space-y-6">
 
         <div>
@@ -131,7 +162,7 @@
         </button>
 
         <p class="text-xs text-gray-500 mt-4">
-          *This form is intended for professional and technical inquiries.
+          *This form is intended for professional and technical inquiries only.
         </p>
 
       </form>
@@ -150,7 +181,7 @@
     <a href="traction.html">Traction</a>
     <a href="contact.html">Contact</a>
   </nav>
-  © 2025 Rodiax Innovations. All rights reserved.
+  © 2025 Rodiax Innovations LLP. All rights reserved.
 </footer>
 
 <!-- ================= JAVASCRIPT ================= -->
@@ -159,9 +190,7 @@
   const reveals = document.querySelectorAll('.reveal');
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('active');
-      }
+      if (entry.isIntersecting) entry.target.classList.add('active');
     });
   }, { threshold: 0.15 });
   reveals.forEach(el => observer.observe(el));
