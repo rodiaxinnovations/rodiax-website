@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rodiax Innovations | Predictive Maintenance & Condition Monitoring</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind Custom Colors -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            rodiax: '#0d9c9a',
+            darkbg: '#050505'
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-darkbg text-gray-200 overflow-x-hidden">
+
+<!-- ================= NAVBAR ================= -->
+<header class="fixed top-0 w-full bg-darkbg/80 backdrop-blur border-b border-gray-800 z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <img src="assets/rodiax-logo.png" class="h-9" alt="Rodiax">
+      <span class="font-bold tracking-wide">RODIAX</span>
+    </div>
+    <nav class="hidden md:flex gap-8 text-sm">
+      <a href="index.html" class="text-rodiax">Home</a>
+      <a href="about.html" class="hover:text-rodiax">About</a>
+      <a href="solutions.html" class="hover:text-rodiax">Solutions</a>
+      <a href="product.html" class="hover:text-rodiax">Product</a>
+      <a href="traction.html" class="hover:text-rodiax">Traction</a>
+      <a href="contact.html" class="hover:text-rodiax">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="relative min-h-screen flex items-center overflow-hidden">
+
+  <video class="absolute inset-0 w-full h-full object-cover" autoplay muted loop playsinline>
+    <source src="assets/hero-industrial.mp4" type="video/mp4">
+  </video>
+
+  <div class="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-black/40"></div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-6 pt-32">
+    <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
+      Engineering Predictability<br>
+      <span class="text-rodiax">into Industrial Performance</span>
+    </h1>
+    <p class="text-gray-300 text-lg mb-8 max-w-2xl">
+      Rodiax Innovations enables industries to transition from reactive
+      maintenance to predictive insights using condition monitoring
+      and engineering-driven data analysis.
+    </p>
+    <div class="flex gap-4">
+      <a href="solutions.html" class="px-8 py-4 bg-rodiax text-black rounded-lg font-semibold">
+        Explore Solutions
+      </a>
+      <a href="product.html" class="px-8 py-4 border border-gray-500 rounded-lg">
+        View Product
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LIVE PREDICTIVE ILLUSTRATION ================= -->
+<section class="py-28 border-t border-gray-800">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+
+    <h2 class="text-3xl md:text-4xl font-bold mb-4">
+      Condition Monitoring in Motion
+    </h2>
+    <p class="text-gray-400 mb-10">
+      Live vibration signal illustrating early fault detection
+    </p>
+
+    <div class="relative w-full max-w-6xl mx-auto">
+      <canvas id="faultCanvas" width="900" height="320" class="w-full"></canvas>
+      <div id="faultStatus"
+           class="absolute bottom-2 left-1/2 -translate-x-1/2 status normal">
+        STATUS: NORMAL OPERATION
+      </div>
+    </div>
+
+    <p class="text-xs text-gray-500 mt-4">
+      *Illustrative simulation inspired by real vibration-based fault detection
+    </p>
+  </div>
+</section>
+
+<!-- ================= PROBLEM ================= -->
+<section class="py-28 border-t border-gray-800">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold mb-12">
+      The Maintenance Challenge
+    </h2>
+
+    <div class="grid md:grid-cols-3 gap-10">
+      <div>
+        <h3 class="font-semibold text-xl mb-3">Unplanned Downtime</h3>
+        <p class="text-gray-400">
+          Unexpected failures disrupt operations, safety,
+          and production schedules.
+        </p>
+      </div>
+      <div>
+        <h3 class="font-semibold text-xl mb-3">Late Detection</h3>
+        <p class="text-gray-400">
+          Early degradation remains invisible without
+          continuous monitoring.
+        </p>
+      </div>
+      <div>
+        <h3 class="font-semibold text-xl mb-3">Reactive Decisions</h3>
+        <p class="text-gray-400">
+          Maintenance actions are often taken after
+          damage has already progressed.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HOW RODIAX WORKS ================= -->
+<section class="py-28 bg-black border-t border-gray-800">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold mb-12">
+      How Rodiax Works
+    </h2>
+
+    <div class="grid md:grid-cols-4 gap-8">
+      <div>
+        <h4 class="font-semibold mb-2">Sense</h4>
+        <p class="text-gray-400 text-sm">
+          Capture real vibration and operating behaviour.
+        </p>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2">Analyze</h4>
+        <p class="text-gray-400 text-sm">
+          Extract trends and identify abnormal patterns.
+        </p>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2">Predict</h4>
+        <p class="text-gray-400 text-sm">
+          Detect degradation before failure occurs.
+        </p>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2">Act</h4>
+        <p class="text-gray-400 text-sm">
+          Enable timely and informed maintenance decisions.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TRUSTED BY ================= -->
+<section class="py-24 border-t border-gray-800">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+
+    <h3 class="text-sm uppercase tracking-widest text-gray-400 mb-10">
+      Trusted by Industry & Academia
+    </h3>
+
+    <div class="flex flex-wrap justify-center items-center gap-14">
+      <img src="assets/cpcl.png" alt="CPCL" class="h-14 opacity-90">
+      <img src="assets/bpcl.png" alt="BPCL" class="h-16 opacity-90">
+      <img src="assets/cusat.png" alt="CUSAT" class="h-20 opacity-90">
+    </div>
+
+    <p class="text-gray-500 text-sm mt-8 max-w-3xl mx-auto">
+      Collaborations and pilot engagements with leading public sector
+      enterprises and academic institutions.
+    </p>
+  </div>
+</section>
+
+<!-- ================= PRODUCT ================= -->
+<section class="py-28 border-t border-gray-800">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold mb-8">
+      Vibranto LF1 — Industrial Condition Monitoring Sensor
+    </h2>
+    <p class="text-gray-400 max-w-4xl mx-auto mb-10">
+      A low-frequency vibration monitoring device designed
+      for long-term deployment in harsh industrial environments.
+    </p>
+    <a href="product.html"
+       class="px-10 py-4 border border-gray-600 rounded-lg hover:border-rodiax">
+      Explore Vibranto LF1
+    </a>
+  </div>
+</section>
+
+<!-- ================= TRACTION ================= -->
+<section class="py-28 bg-black border-t border-gray-800">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold mb-8">
+      Proven Through Real-World Validation
+    </h2>
+    <p class="text-gray-400 max-w-4xl mx-auto mb-10">
+      Rodiax technology has progressed through certified testing,
+      pilot deployments, and industrial field validation.
+    </p>
+    <a href="traction.html"
+       class="px-10 py-4 bg-rodiax text-black rounded-lg font-semibold">
+      View Traction
+    </a>
+  </div>
+</section>
+
+<!-- ================= FINAL CTA ================= -->
+<section class="py-28 bg-rodiax text-black text-center">
+  <h2 class="text-3xl md:text-4xl font-bold mb-4">
+    Ready to Improve Maintenance Reliability?
+  </h2>
+  <p class="mb-8">
+    Talk to Rodiax engineers to explore deployment possibilities.
+  </p>
+  <a href="contact.html"
+     class="px-10 py-4 bg-black text-white rounded-lg font-semibold">
+    Talk to Our Engineers
+  </a>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="py-10 bg-black text-center text-gray-500">
+  © 2025 Rodiax Innovations. All rights reserved.
+</footer>
+
+<!-- ================= PREDICTIVE WAVE JS ================= -->
+<script>
+  const canvas = document.getElementById("faultCanvas");
+  const ctx = canvas.getContext("2d");
+  const statusBox = document.getElementById("faultStatus");
+
+  const centerY = canvas.height / 2;
+  const threshold = 45;
+  let time = 0;
+  let faultGrowth = 0;
+
+  function drawThresholds() {
+    ctx.setLineDash([6,6]);
+    ctx.strokeStyle = "#ef4444";
+    ctx.lineWidth = 1;
+
+    ctx.beginPath();
+    ctx.moveTo(0, centerY - threshold);
+    ctx.lineTo(canvas.width, centerY - threshold);
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(0, centerY + threshold);
+    ctx.lineTo(canvas.width, centerY + threshold);
+    ctx.stroke();
+
+    ctx.setLineDash([]);
+  }
+
+  function drawSignal() {
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    drawThresholds();
+
+    let exceeded = false;
+    ctx.beginPath();
+    ctx.lineWidth = 2;
+
+    for (let x = 0; x < canvas.width; x++) {
+      let y = centerY + Math.sin((x + time) * 0.04) * 18;
+      if (time > 300) y += Math.sin((x + time) * 0.25) * faultGrowth;
+
+      const over = Math.abs(y - centerY) > threshold;
+      ctx.strokeStyle = over ? "#ef4444" : "#0d9c9a";
+      if (over) exceeded = true;
+
+      x === 0 ? ctx.moveTo(x,y) : ctx.lineTo(x,y);
+    }
+
+    ctx.stroke();
+
+    if (time > 300 && faultGrowth < 40) faultGrowth += 0.05;
+
+    if (faultGrowth > 30 || exceeded) {
+      statusBox.textContent = "STATUS: ALERT — FAULT DETECTED";
+      statusBox.className = "status alert";
+      canvas.style.filter = "drop-shadow(0 0 18px rgba(239,68,68,0.35))";
+    } else if (faultGrowth > 15) {
+      statusBox.textContent = "STATUS: WARNING — ABNORMAL TREND";
+      statusBox.className = "status warning";
+      canvas.style.filter = "none";
+    } else {
+      statusBox.textContent = "STATUS: NORMAL OPERATION";
+      statusBox.className = "status normal";
+      canvas.style.filter = "none";
+    }
+
+    time += 1.5;
+    requestAnimationFrame(drawSignal);
+  }
+
+  drawSignal();
+</script>
+
+</body>
+</html>

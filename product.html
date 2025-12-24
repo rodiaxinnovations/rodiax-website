@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vibranto LF1 | Product | Rodiax Innovations</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind Custom Colors -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            rodiax: '#0d9c9a',
+            darkbg: '#050505'
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-darkbg text-gray-200 overflow-x-hidden">
+
+<!-- Floating particles -->
+<div class="particles" id="particles"></div>
+
+<!-- ================= NAVBAR ================= -->
+<header class="fixed top-0 w-full bg-darkbg/80 backdrop-blur border-b border-gray-800 z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <img src="assets/rodiax-logo.png" alt="Rodiax Logo" class="h-9">
+      <span class="font-bold tracking-wide">RODIAX</span>
+    </div>
+
+    <nav class="hidden md:flex gap-8 text-sm">
+      <a href="index.html" class="hover:text-rodiax">Home</a>
+      <a href="about.html" class="hover:text-rodiax">About</a>
+      <a href="solutions.html" class="hover:text-rodiax">Solutions</a>
+      <a href="product.html" class="text-rodiax">Product</a>
+      <a href="traction.html" class="hover:text-rodiax">Traction</a>
+      <a href="contact.html" class="hover:text-rodiax">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="min-h-screen pt-32 flex items-center animated-bg relative z-10">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-center">
+
+    <!-- Text -->
+    <div class="reveal">
+      <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-6">
+        Vibranto LF1<br>
+        <span class="text-rodiax">Low-Frequency Vibration Sensor</span>
+      </h1>
+      <p class="text-gray-400 text-lg mb-8">
+        Vibranto LF1 is Rodiax Innovations’ flagship sensing product,
+        engineered for low-frequency vibration monitoring in real
+        industrial environments and long-term deployment.
+      </p>
+
+      <div class="flex gap-4">
+        <a href="contact.html"
+           class="px-8 py-4 bg-rodiax text-black font-semibold rounded-lg hover:opacity-90 transition">
+          Discuss Deployment
+        </a>
+        <a href="traction.html"
+           class="px-8 py-4 border border-gray-600 rounded-lg hover:border-rodiax transition">
+          View Field Validation
+        </a>
+      </div>
+    </div>
+
+    <!-- Visual -->
+    <div class="flex justify-center reveal">
+      <img src="assets/rodiax-logo.png"
+           alt="Vibranto LF1"
+           class="w-72 md:w-96 opacity-90">
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= WHAT IS VIBRANTO ================= -->
+<section class="py-24 border-t border-gray-800 relative z-10">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold mb-10 reveal">
+      What is Vibranto LF1?
+    </h2>
+    <p class="text-gray-400 text-lg max-w-4xl mx-auto reveal">
+      Vibranto LF1 is a compact, industrial-grade vibration sensor
+      optimized for capturing low-frequency structural and mechanical
+      vibration behavior. It forms a core component of Rodiax’s
+      <a href="solutions.html" class="text-rodiax underline">
+        condition monitoring and predictive maintenance solutions
+      </a>.
+    </p>
+  </div>
+</section>
+
+<!-- ================= KEY FEATURES ================= -->
+<section class="py-28 bg-black relative z-10">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-20 reveal">
+      Key Technical Features
+    </h2>
+
+    <div class="grid md:grid-cols-3 gap-10">
+      <div class="reveal p-8 bg-darkbg border border-gray-800 rounded-xl">
+        <h3 class="font-semibold text-xl mb-3">Low-Frequency Optimized</h3>
+        <p class="text-gray-400">
+          Designed to capture low-frequency vibration patterns
+          often missed by conventional sensors.
+        </p>
+      </div>
+
+      <div class="reveal p-8 bg-darkbg border border-gray-800 rounded-xl">
+        <h3 class="font-semibold text-xl mb-3">Industrial-Grade Design</h3>
+        <p class="text-gray-400">
+          Robust enclosure and mounting suitable for
+          dusty, high-vibration industrial environments.
+        </p>
+      </div>
+
+      <div class="reveal p-8 bg-darkbg border border-gray-800 rounded-xl">
+        <h3 class="font-semibold text-xl mb-3">Long-Term Deployment</h3>
+        <p class="text-gray-400">
+          Engineered for continuous monitoring and
+          unattended long-duration operation.
+        </p>
+      </div>
+
+      <div class="reveal p-8 bg-darkbg border border-gray-800 rounded-xl">
+        <h3 class="font-semibold text-xl mb-3">High Resolution Sensing</h3>
+        <p class="text-gray-400">
+          High sensitivity enables early detection
+          of structural and mechanical anomalies.
+        </p>
+      </div>
+
+      <div class="reveal p-8 bg-darkbg border border-gray-800 rounded-xl">
+        <h3 class="font-semibold text-xl mb-3">Thermal Endurance</h3>
+        <p class="text-gray-400">
+          Suitable for operation in elevated temperature
+          industrial environments.
+        </p>
+      </div>
+
+      <div class="reveal p-8 bg-darkbg border border-gray-800 rounded-xl">
+        <h3 class="font-semibold text-xl mb-3">Ecosystem Ready</h3>
+        <p class="text-gray-400">
+          Integrates seamlessly into Rodiax’s monitoring
+          and analytics ecosystem.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CERTIFICATION ================= -->
+<section class="py-24 border-t border-gray-800 relative z-10">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold mb-10 reveal">
+      Certified & Validated
+    </h2>
+    <p class="text-gray-400 text-lg max-w-4xl mx-auto reveal">
+      Vibranto LF1 has been tested and calibrated by the
+      <strong>Fluid Control Research Institute (FCRI), Palakkad</strong>,
+      validating its suitability for industrial vibration
+      and condition monitoring applications.
+    </p>
+  </div>
+</section>
+
+<!-- ================= FIELD DEPLOYMENT ================= -->
+<section class="py-28 bg-black relative z-10">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 reveal">
+      Field-Deployed in Industrial Environments
+    </h2>
+
+    <p class="text-gray-400 text-center max-w-3xl mx-auto mb-16 reveal">
+      Vibranto LF1 is deployed directly on operating
+      industrial equipment, validating performance
+      under real environmental and vibration conditions.
+      See more in our
+      <a href="traction.html" class="text-rodiax underline">
+        traction and validation
+      </a>
+      journey.
+    </p>
+
+    <div class="grid md:grid-cols-2 gap-10">
+      <img src="assets/vibranto-site-1.jpg"
+           alt="Vibranto LF1 deployed on industrial equipment"
+           class="rounded-xl border border-gray-800 reveal">
+      <img src="assets/vibranto-site-2.jpg"
+           alt="Vibranto LF1 field installation at industrial site"
+           class="rounded-xl border border-gray-800 reveal">
+    </div>
+  </div>
+</section>
+
+<!-- ================= POSITIONING ================= -->
+<section class="py-24 border-t border-gray-800 relative z-10">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold mb-10 reveal">
+      Part of the Rodiax Monitoring Ecosystem
+    </h2>
+    <p class="text-gray-400 text-lg max-w-4xl mx-auto reveal">
+      Vibranto LF1 is not a standalone sensor.
+      It is a core building block of Rodiax Innovations’
+      broader monitoring and
+      <a href="solutions.html" class="text-rodiax underline">
+        predictive maintenance solutions
+      </a>,
+      enabling data-driven maintenance decisions.
+    </p>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="py-28 bg-rodiax text-black text-center relative z-10 reveal">
+  <h2 class="text-3xl md:text-4xl font-bold mb-4">
+    Interested in Vibranto LF1?
+  </h2>
+  <p class="mb-8">
+    Engage with our engineering team to discuss
+    deployment and integration possibilities.
+  </p>
+  <a href="contact.html"
+     class="px-10 py-4 bg-black text-white rounded-lg font-semibold">
+    Contact Rodiax Innovations
+  </a>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="py-10 bg-black text-center text-gray-500 relative z-10">
+  <nav class="flex justify-center gap-6 text-sm mb-4">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="solutions.html">Solutions</a>
+    <a href="product.html">Product</a>
+    <a href="traction.html">Traction</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  © 2025 Rodiax Innovations. All rights reserved.
+</footer>
+
+<!-- ================= JAVASCRIPT ================= -->
+<script>
+  // Reveal on scroll
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+      }
+    });
+  }, { threshold: 0.15 });
+  reveals.forEach(el => observer.observe(el));
+
+  // Floating particles
+  const particleContainer = document.getElementById('particles');
+  for (let i = 0; i < 40; i++) {
+    const p = document.createElement('div');
+    p.classList.add('particle');
+    const size = Math.random() * 6 + 2;
+    p.style.width = `${size}px`;
+    p.style.height = `${size}px`;
+    p.style.left = Math.random() * 100 + 'vw';
+    p.style.bottom = '-' + Math.random() * 100 + 'vh';
+    p.style.animationDuration = (18 + Math.random() * 20) + 's';
+    p.style.animationDelay = Math.random() * 10 + 's';
+    particleContainer.appendChild(p);
+  }
+</script>
+
+</body>
+</html>
