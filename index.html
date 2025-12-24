@@ -8,7 +8,6 @@
   <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Tailwind Custom Colors -->
   <script>
     tailwind.config = {
       theme: {
@@ -46,29 +45,38 @@
 </header>
 
 <!-- ================= HERO ================= -->
-<section class="relative min-h-screen flex items-center overflow-hidden">
+<section class="relative min-h-[85vh] md:min-h-screen flex items-center overflow-hidden">
 
-  <video class="absolute inset-0 w-full h-full object-cover" autoplay muted loop playsinline>
+  <!-- Desktop video only -->
+  <video
+    class="absolute inset-0 w-full h-full object-cover hidden md:block"
+    autoplay muted loop playsinline>
     <source src="assets/hero-industrial.mp4" type="video/mp4">
   </video>
 
+  <!-- Gradient overlay -->
   <div class="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-black/40"></div>
 
-  <div class="relative z-10 max-w-7xl mx-auto px-6 pt-32">
-    <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
+  <!-- Content -->
+  <div class="relative z-10 max-w-7xl mx-auto px-6 pt-28 md:pt-32">
+    <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-snug md:leading-tight">
       Engineering Predictability<br>
       <span class="text-rodiax">into Industrial Performance</span>
     </h1>
-    <p class="text-gray-300 text-lg mb-8 max-w-2xl">
+
+    <p class="text-gray-300 text-base md:text-lg mb-8 max-w-2xl">
       Rodiax Innovations enables industries to transition from reactive
       maintenance to predictive insights using condition monitoring
       and engineering-driven data analysis.
     </p>
-    <div class="flex gap-4">
-      <a href="solutions.html" class="px-8 py-4 bg-rodiax text-black rounded-lg font-semibold">
+
+    <div class="flex flex-wrap gap-4">
+      <a href="solutions.html"
+         class="px-8 py-4 bg-rodiax text-black rounded-lg font-semibold">
         Explore Solutions
       </a>
-      <a href="product.html" class="px-8 py-4 border border-gray-500 rounded-lg">
+      <a href="product.html"
+         class="px-8 py-4 border border-gray-500 rounded-lg">
         View Product
       </a>
     </div>
@@ -76,18 +84,24 @@
 </section>
 
 <!-- ================= LIVE PREDICTIVE ILLUSTRATION ================= -->
-<section class="py-28 border-t border-gray-800">
+<section class="py-24 md:py-28 border-t border-gray-800">
   <div class="max-w-7xl mx-auto px-6 text-center">
 
     <h2 class="text-3xl md:text-4xl font-bold mb-4">
       Condition Monitoring in Motion
     </h2>
+
     <p class="text-gray-400 mb-10">
       Live vibration signal illustrating early fault detection
     </p>
 
     <div class="relative w-full max-w-6xl mx-auto">
-      <canvas id="faultCanvas" width="900" height="320" class="w-full"></canvas>
+      <canvas
+        id="faultCanvas"
+        width="900"
+        height="240"
+        class="w-full"></canvas>
+
       <div id="faultStatus"
            class="absolute bottom-2 left-1/2 -translate-x-1/2 status normal">
         STATUS: NORMAL OPERATION
@@ -101,7 +115,7 @@
 </section>
 
 <!-- ================= PROBLEM ================= -->
-<section class="py-28 border-t border-gray-800">
+<section class="py-24 md:py-28 border-t border-gray-800">
   <div class="max-w-7xl mx-auto px-6 text-center">
     <h2 class="text-3xl md:text-4xl font-bold mb-12">
       The Maintenance Challenge
@@ -134,7 +148,7 @@
 </section>
 
 <!-- ================= HOW RODIAX WORKS ================= -->
-<section class="py-28 bg-black border-t border-gray-800">
+<section class="py-24 md:py-28 bg-black border-t border-gray-800">
   <div class="max-w-7xl mx-auto px-6 text-center">
     <h2 class="text-3xl md:text-4xl font-bold mb-12">
       How Rodiax Works
@@ -170,62 +184,22 @@
 </section>
 
 <!-- ================= TRUSTED BY ================= -->
-<section class="py-24 border-t border-gray-800">
+<section class="py-20 md:py-24 border-t border-gray-800">
   <div class="max-w-7xl mx-auto px-6 text-center">
-
     <h3 class="text-sm uppercase tracking-widest text-gray-400 mb-10">
       Trusted by Industry & Academia
     </h3>
 
-    <div class="flex flex-wrap justify-center items-center gap-14">
-      <img src="assets/cpcl.png" alt="CPCL" class="h-14 opacity-90">
-      <img src="assets/bpcl.png" alt="BPCL" class="h-16 opacity-90">
-      <img src="assets/cusat.png" alt="CUSAT" class="h-20 opacity-90">
+    <div class="flex flex-wrap justify-center items-center gap-12">
+      <img src="assets/cpcl.png" class="h-14 opacity-90" alt="CPCL">
+      <img src="assets/bpcl.png" class="h-16 opacity-90" alt="BPCL">
+      <img src="assets/cusat.png" class="h-20 opacity-90" alt="CUSAT">
     </div>
-
-    <p class="text-gray-500 text-sm mt-8 max-w-3xl mx-auto">
-      Collaborations and pilot engagements with leading public sector
-      enterprises and academic institutions.
-    </p>
-  </div>
-</section>
-
-<!-- ================= PRODUCT ================= -->
-<section class="py-28 border-t border-gray-800">
-  <div class="max-w-7xl mx-auto px-6 text-center">
-    <h2 class="text-3xl md:text-4xl font-bold mb-8">
-      Vibranto LF1 — Industrial Condition Monitoring Sensor
-    </h2>
-    <p class="text-gray-400 max-w-4xl mx-auto mb-10">
-      A low-frequency vibration monitoring device designed
-      for long-term deployment in harsh industrial environments.
-    </p>
-    <a href="product.html"
-       class="px-10 py-4 border border-gray-600 rounded-lg hover:border-rodiax">
-      Explore Vibranto LF1
-    </a>
-  </div>
-</section>
-
-<!-- ================= TRACTION ================= -->
-<section class="py-28 bg-black border-t border-gray-800">
-  <div class="max-w-7xl mx-auto px-6 text-center">
-    <h2 class="text-3xl md:text-4xl font-bold mb-8">
-      Proven Through Real-World Validation
-    </h2>
-    <p class="text-gray-400 max-w-4xl mx-auto mb-10">
-      Rodiax technology has progressed through certified testing,
-      pilot deployments, and industrial field validation.
-    </p>
-    <a href="traction.html"
-       class="px-10 py-4 bg-rodiax text-black rounded-lg font-semibold">
-      View Traction
-    </a>
   </div>
 </section>
 
 <!-- ================= FINAL CTA ================= -->
-<section class="py-28 bg-rodiax text-black text-center">
+<section class="py-24 md:py-28 bg-rodiax text-black text-center">
   <h2 class="text-3xl md:text-4xl font-bold mb-4">
     Ready to Improve Maintenance Reliability?
   </h2>
@@ -238,12 +212,11 @@
   </a>
 </section>
 
-<!-- ================= FOOTER ================= -->
 <footer class="py-10 bg-black text-center text-gray-500">
   © 2025 Rodiax Innovations. All rights reserved.
 </footer>
 
-<!-- ================= PREDICTIVE WAVE JS ================= -->
+<!-- ================= LIVE SIGNAL SCRIPT ================= -->
 <script>
   const canvas = document.getElementById("faultCanvas");
   const ctx = canvas.getContext("2d");
