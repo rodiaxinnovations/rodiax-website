@@ -242,5 +242,55 @@ video {
   color: #ef4444;
   background: rgba(239,68,68,0.18);
 }
+@keyframes walkLeft {
+  0% { transform: rotate(10deg); }
+  50% { transform: rotate(-10deg); }
+  100% { transform: rotate(10deg); }
+}
 
+@keyframes walkRight {
+  0% { transform: rotate(-10deg); }
+  50% { transform: rotate(10deg); }
+  100% { transform: rotate(-10deg); }
+}
+
+#armLeft, #legRight {
+  transform-origin: top center;
+  animation: walkLeft 1s infinite ease-in-out;
+}
+
+#armRight, #legLeft {
+  transform-origin: top center;
+  animation: walkRight 1s infinite ease-in-out;
+}
+
+#walker {
+  transition: transform 0.2s ease;
+}
+
+@keyframes walkLeft {
+  0% { transform: rotate(10deg); }
+  50% { transform: rotate(-10deg); }
+  100% { transform: rotate(10deg); }
+}
+
+@keyframes walkRight {
+  0% { transform: rotate(-10deg); }
+  50% { transform: rotate(10deg); }
+  100% { transform: rotate(-10deg); }
+}
+
+#armLeft, #legRight {
+  transform-origin: top center;
+  animation: walkLeft 1s infinite ease-in-out;
+}
+
+#armRight, #legLeft {
+  transform-origin: top center;
+  animation: walkRight 1s infinite ease-in-out;
+}
+
+#walker {
+  transition: transform 0.15s ease;
+}
 
