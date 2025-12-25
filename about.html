@@ -8,7 +8,6 @@
   <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Tailwind Custom Colors -->
   <script>
     tailwind.config = {
       theme: {
@@ -22,7 +21,6 @@
     }
   </script>
 
-  <!-- External CSS -->
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -51,7 +49,7 @@
 </header>
 
 <!-- ================= HERO ================= -->
-<section class="min-h-screen pt-32 flex items-center animated-bg relative z-10">
+<section class="min-h-screen pt-32 flex items-center relative z-10">
   <div class="max-w-6xl mx-auto px-6 text-center">
     <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-6 reveal">
       Engineering with Purpose<br>
@@ -66,190 +64,156 @@
 </section>
 
 <!-- ================= WHO WE ARE ================= -->
-<section class="py-24 border-t border-gray-800 relative z-10">
+<section class="py-24 border-t border-gray-800">
   <div class="max-w-6xl mx-auto px-6 text-center">
-    <h2 class="text-3xl md:text-4xl font-bold mb-10 reveal">
-      Who We Are
-    </h2>
-    <p class="text-gray-400 text-lg max-w-4xl mx-auto reveal">
-      Rodiax Innovations was founded to bridge the gap between
-      advanced engineering technologies and real industrial usability.
-      We work at the intersection of mechanical engineering,
-      sensing systems, and data-driven decision-making.
+
+    <!-- Section Heading -->
+    <h3 class="text-2xl md:text-3xl font-semibold mb-6">
+      Engineering-Led Founding Team
+    </h3>
+
+    <!-- Description -->
+    <p class="text-gray-400 max-w-4xl mx-auto mb-14 leading-relaxed">
+      Rodiax Innovations is founded by four mechanical engineers, all alumni of the
+Cochin University of Science and Technology, with advanced academic and management training from IIM Ahmedabad, IIM Indore, NIT Tiruchirappalli, and Cochin University of Science and Technology.
+
+The founding team blends strong mechanical engineering fundamentals with research depth and management expertise, enabling a practical yet rigorous approach to industrial problem-solving.
+
+This combination allows Rodiax to design solutions that are not only technologically sound, but also aligned with real-world operational demands..
     </p>
+
+    <!-- Logos Container -->
+    <div class="rounded-xl border border-gray-800 p-10">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-12 place-items-center">
+
+        <!-- CUSAT -->
+        <div class="flex flex-col items-center gap-4">
+          <div class="h-20 w-32 flex items-center justify-center">
+            <img src="assets/logos/cusat.png"
+                 alt="CUSAT"
+                 class="max-h-16 object-contain grayscale opacity-70
+                        transition-all duration-300
+                        hover:grayscale-0 hover:opacity-100">
+          </div>
+          <span class="text-sm text-gray-300">CUSAT</span>
+        </div>
+
+        <!-- NIT Trichy -->
+        <div class="flex flex-col items-center gap-4">
+          <div class="h-20 w-32 flex items-center justify-center">
+            <img src="assets/logos/nit-trichy.png"
+                 alt="NIT Trichy"
+                 class="max-h-16 object-contain grayscale opacity-70
+                        transition-all duration-300
+                        hover:grayscale-0 hover:opacity-100">
+          </div>
+          <span class="text-sm text-gray-300">NIT Tiruchirappalli</span>
+        </div>
+
+        <!-- IIM Indore -->
+        <div class="flex flex-col items-center gap-4">
+          <div class="h-20 w-32 flex items-center justify-center">
+            <img src="assets/logos/iim-indore.png"
+                 alt="IIM Indore"
+                 class="max-h-16 object-contain grayscale opacity-70
+                        transition-all duration-300
+                        hover:grayscale-0 hover:opacity-100">
+          </div>
+          <span class="text-sm text-gray-300">IIM Indore</span>
+        </div>
+
+        <!-- IIM Ahmedabad -->
+        <div class="flex flex-col items-center gap-4">
+          <div class="h-20 w-32 flex items-center justify-center">
+            <img src="assets/logos/iim-ahmedabad.png"
+                 alt="IIM Ahmedabad"
+                 class="max-h-16 object-contain grayscale opacity-70
+                        transition-all duration-300
+                        hover:grayscale-0 hover:opacity-100">
+          </div>
+          <span class="text-sm text-gray-300">IIM Ahmedabad</span>
+        </div>
+
+      </div>
+    </div>
+
   </div>
 </section>
 
-<!-- ================= OUR PHILOSOPHY ================= -->
-<section class="py-28 bg-black relative z-10">
+
+<!-- ================= PHILOSOPHY ================= -->
+<section class="py-28 bg-black">
   <div class="max-w-7xl mx-auto px-6">
     <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 reveal">
       Our Engineering Philosophy
     </h2>
 
     <div class="grid md:grid-cols-3 gap-10">
-      <div class="reveal p-8 bg-darkbg border border-gray-800 rounded-xl">
+      <div class="p-8 bg-darkbg border border-gray-800 rounded-xl">
         <h3 class="font-semibold text-xl mb-3">Engineering First</h3>
         <p class="text-gray-400">
-          Sustainable industrial solutions are built on
-          sound engineering principles, not assumptions.
+          Sustainable industrial solutions are built on sound engineering
+          principles, not assumptions.
         </p>
       </div>
 
-      <div class="reveal p-8 bg-darkbg border border-gray-800 rounded-xl">
+      <div class="p-8 bg-darkbg border border-gray-800 rounded-xl">
         <h3 class="font-semibold text-xl mb-3">Deployability Matters</h3>
         <p class="text-gray-400">
-          Technology must work reliably in harsh environments,
-          not just in controlled laboratory conditions.
+          Technology must work reliably in harsh environments, not just labs.
         </p>
       </div>
 
-      <div class="reveal p-8 bg-darkbg border border-gray-800 rounded-xl">
+      <div class="p-8 bg-darkbg border border-gray-800 rounded-xl">
         <h3 class="font-semibold text-xl mb-3">Data with Context</h3>
         <p class="text-gray-400">
-          Data becomes valuable only when it enables
-          engineers and managers to take confident action.
+          Data is valuable only when it enables confident decisions.
         </p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ================= MISSION ================= -->
-<section class="py-24 border-t border-gray-800 relative z-10">
+<!-- ================= MISSION & VISION ================= -->
+<section class="py-28 border-t border-gray-800">
   <div class="max-w-6xl mx-auto px-6 text-center">
-    <h2 class="text-3xl md:text-4xl font-bold mb-10 reveal">
-      Our Mission
-    </h2>
-    <p class="text-gray-400 text-lg max-w-4xl mx-auto reveal">
-      To help industries transition from traditional maintenance practices
-      to intelligent, condition-based and predictive maintenance
-      using accessible and reliable industrial technologies.
+    <h2 class="text-3xl md:text-4xl font-bold mb-6">Our Mission</h2>
+    <p class="text-gray-400 max-w-4xl mx-auto mb-16">
+      To help industries transition from traditional maintenance to intelligent,
+      condition-based and predictive maintenance.
+    </p>
+
+    <h2 class="text-3xl md:text-4xl font-bold mb-6">Our Vision</h2>
+    <p class="text-gray-400 max-w-4xl mx-auto">
+      A future where industries of all sizes can access advanced monitoring
+      technologies that improve reliability and sustainability.
     </p>
   </div>
 </section>
 
-<!-- ================= VISION ================= -->
-<section class="py-24 bg-black relative z-10">
-  <div class="max-w-6xl mx-auto px-6 text-center">
-    <h2 class="text-3xl md:text-4xl font-bold mb-10 reveal">
-      Our Vision
-    </h2>
-    <p class="text-gray-400 text-lg max-w-4xl mx-auto reveal">
-      We envision a future where industries of all sizes
-      can access advanced monitoring technologies that
-      improve reliability, efficiency, and sustainability.
-    </p>
-  </div>
-</section>
-
-<!-- ================= HOW WE WORK ================= -->
-<section class="py-28 border-t border-gray-800 relative z-10">
-  <div class="max-w-7xl mx-auto px-6">
-    <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 reveal">
-      How We Work
-    </h2>
-
-    <div class="grid md:grid-cols-4 gap-8 text-center">
-      <div class="reveal p-6 border border-gray-800 rounded-xl">
-        Understand Industrial Context
-      </div>
-      <div class="reveal p-6 border border-gray-800 rounded-xl">
-        Engineer Practical Solutions
-      </div>
-      <div class="reveal p-6 border border-gray-800 rounded-xl">
-        Validate Through Deployment
-      </div>
-      <div class="reveal p-6 border border-gray-800 rounded-xl">
-        Improve Through Data & Feedback
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= TRUSTED BY ================= -->
-<section class="py-20 md:py-24 border-t border-gray-800">
-  <div class="max-w-7xl mx-auto px-6 text-center">
-
-    <h3 class="text-sm uppercase tracking-widest text-gray-400 mb-10">
-      Trusted by Industry & Academia
-    </h3>
-
-    <div class="flex flex-wrap justify-center items-center gap-12 md:gap-16">
-
-      <img src="assets/cpcl.png"
-           alt="Chennai Petroleum Corporation Limited"
-           class="h-14 md:h-16 opacity-90 grayscale hover:grayscale-0 transition">
-
-      <img src="assets/bpcl.png"
-           alt="Bharat Petroleum Corporation Limited"
-           class="h-14 md:h-16 opacity-90 grayscale hover:grayscale-0 transition">
-
-      <img src="assets/cusat.png"
-           alt="Cochin University of Science and Technology"
-           class="h-16 md:h-20 opacity-90 grayscale hover:grayscale-0 transition">
-
-    </div>
-
-  </div>
-</section>
-
-
-<!-- ================= GUIDED NEXT STEP ================= -->
-<section class="py-28 bg-rodiax text-black text-center relative z-10 reveal">
+<!-- ================= CTA ================= -->
+<section class="py-28 bg-rodiax text-black text-center">
   <h2 class="text-3xl md:text-4xl font-bold mb-4">
-    See How Our Philosophy Translates into Solutions
+    Engineering You Can Trust
   </h2>
   <p class="mb-8">
-    Explore how Rodiax applies engineering principles
-    to solve real industrial maintenance challenges.
+    Discover how Rodiax applies engineering principles to real industrial problems.
   </p>
-  <a href="solutions.html"
-     class="px-10 py-4 bg-black text-white rounded-lg font-semibold">
+  <a href="solutions.html" class="px-10 py-4 bg-black text-white rounded-lg font-semibold">
     Explore Our Solutions
   </a>
 </section>
 
-<!-- ================= FOOTER ================= -->
-<footer class="py-10 bg-black text-center text-gray-500 relative z-10">
-  <nav class="flex justify-center gap-6 text-sm mb-4">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="solutions.html">Solutions</a>
-    <a href="product.html">Product</a>
-    <a href="traction.html">Traction</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+<footer class="py-10 bg-black text-center text-gray-500">
   © 2025 Rodiax Innovations. All rights reserved.
 </footer>
 
-<!-- ================= JAVASCRIPT ================= -->
 <script>
-  // Reveal on scroll
   const reveals = document.querySelectorAll('.reveal');
   const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('active');
-      }
-    });
+    entries.forEach(entry => entry.isIntersecting && entry.target.classList.add('active'));
   }, { threshold: 0.15 });
   reveals.forEach(el => observer.observe(el));
-
-  // Floating particles
-  const particleContainer = document.getElementById('particles');
-  for (let i = 0; i < 40; i++) {
-    const p = document.createElement('div');
-    p.classList.add('particle');
-    const size = Math.random() * 6 + 2;
-    p.style.width = `${size}px`;
-    p.style.height = `${size}px`;
-    p.style.left = Math.random() * 100 + 'vw';
-    p.style.bottom = '-' + Math.random() * 100 + 'vh';
-    p.style.animationDuration = (18 + Math.random() * 20) + 's';
-    p.style.animationDelay = Math.random() * 10 + 's';
-    particleContainer.appendChild(p);
-  }
 </script>
 
 </body>
